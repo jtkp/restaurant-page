@@ -1,6 +1,10 @@
 import Beef from './images/beef.jpg';
 
 const generateHomePage = () => {
+    const content = document.querySelector('#content');
+    content.replaceChildren();
+
+
     const container = document.createElement('div');
     container.id = 'container';
 
@@ -16,7 +20,6 @@ const generateHomePage = () => {
     p.innerHTML = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis porro ipsam, provident totam quis est nesciunt cum ut vel tempora!';
     container.appendChild(p);
 
-    const content = document.querySelector('#content');
     content.appendChild(container);
 };
 
